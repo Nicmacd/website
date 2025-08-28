@@ -3,122 +3,103 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.css';
 ---
 
-<Layout title="Your Name - Product Designer">
+<Layout title="Nic Macdonald - Product Designer">
   <!-- Header Navigation -->
   <header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm">
     <nav class="max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6 py-4 sm:py-6 flex justify-between items-center">
       <div class="flex items-center space-x-2">
         <div class="w-2 h-2 bg-black rounded-full"></div>
-        <span class="text-lg font-medium text-gray-900">Jordan Hughes</span>
+        <a href="#hero" class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors">Nic Macdonald</a>
       </div>
       <div class="hidden md:flex space-x-10">
-        <a href="#projects" class="text-gray-600 hover:text-gray-900 font-medium">Projects</a>
-        <a href="#about" class="text-gray-600 hover:text-gray-900 font-medium">About</a>
-        <a href="#reading" class="text-gray-600 hover:text-gray-900 font-medium">Reading</a>
+        <a href="#projects" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-1">Projects</a>
+        <a href="#about" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-2">About</a>
+        <a href="#reading" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-3">Reading</a>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section - Full Viewport -->
-  <main class="pt-20">
-    <section class="min-h-screen flex flex-col max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <!-- Description Text at Top -->
-      <div class="max-w-xl pt-6 sm:pt-8 mb-6 sm:mb-8">
-        <h2 class="text-base sm:text-lg md:text-xl font-normal leading-relaxed text-gray-600">
-          I'm a product designer from Australia making<span class="hidden sm:inline"> useful</span> things for the internet and exploring the world.
-        </h2>
-      </div>
+  <section id="hero" class="min-h-screen flex flex-col max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
+    <!-- Description Text at Top -->
+    <div class="max-w-xl pt-20 sm:pt-24 mb-8 sm:mb-12">
+      <h2 class="text-base sm:text-lg md:text-xl font-normal leading-relaxed text-gray-600 fade-in-text">
+        I'm a product designer from Australia making<span class="hidden sm:inline"> useful</span> things for the internet and exploring the world.
+      </h2>
+    </div>
 
-      <!-- Main Hero Content -->
-      <div class="flex-1 flex flex-col justify-end pb-8">        
-        <!-- Header Content Wrapper -->
-        <div class="header_content-wrapper">
-          <!-- Header Content Left: Image -->
-          <div class="header_content-left">
-            <div class="image-wrapper-3-2">
-              <!-- Replace this with actual hero image -->
-              <div class="w-full aspect-[3/2] rounded-lg overflow-hidden">
-                <div class="w-full h-full bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 flex items-center justify-center">
-                  <div class="text-center text-white">
-                    <div class="text-4xl mb-1">🏔️</div>
-                    <p class="text-xs font-medium">Add jordan-hughes-image.webp</p>
-                    <p class="text-xs opacity-75">3:2 aspect ratio</p>
-                  </div>
+    <!-- Main Hero Content - Flex grow to fill remaining space -->
+    <div class="flex-1 flex flex-col justify-end pb-8">        
+      <!-- Header Content Wrapper -->
+      <div class="header_content-wrapper">
+        <!-- Header Content Left: Image -->
+        <div class="header_content-left">
+          <div class="image-wrapper-3-2">
+            <!-- Replace this with actual hero image -->
+            <div class="w-full aspect-[3/2] rounded-lg overflow-hidden fade-in-image">
+              <div class="w-full h-full bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 flex items-center justify-center">
+                <div class="text-center text-white">
+                  <div class="text-4xl mb-1">🏔️</div>
+                                      <p class="text-xs font-medium">Add nic-macdonald-image.webp</p>
+                  <p class="text-xs opacity-75">3:2 aspect ratio</p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Header Content Right: Social Links -->
-          <div class="header_content-right">
-            <div class="navbar_links-wrapper">
-              <!-- X (Twitter) -->
-              <a href="https://twitter.com/jordanphughes" target="_blank" class="button w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">X (Twitter)</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
-
-              <!-- Dribbble -->
-              <a href="https://dribbble.com/jordanhughes" target="_blank" class="button w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">Dribbble</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
-
-              <!-- Figma -->
-              <a href="https://www.figma.com/@designer" target="_blank" class="button w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">Figma</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
-
-              <!-- Layers -->
-              <a href="https://layers.to/god" target="_blank" class="button w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">Layers</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
-
-              <!-- Webflow -->
-              <a href="https://webflow.com/jordan" target="_blank" class="button w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">Webflow</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
-
-              <!-- LinkedIn -->
-              <a href="https://www.linkedin.com/in/jordanphughes/" target="_blank" class="button hide-mobile-portrait w-inline-block">
-                <div class="overflow-hidden">
-                  <div class="text-size-medium">LinkedIn</div>
-                </div>
-                <div class="button_underline-wrapper">
-                  <div class="button_underline"></div>
-                </div>
-              </a>
+        <!-- Header Content Right: Social Links -->
+        <div class="header_content-right">
+                  <div class="navbar_links-wrapper">
+          <!-- X -->
+          <a href="https://twitter.com/nicmacdonald" target="_blank" class="button w-inline-block slide-up-social social-item-1">
+            <div class="overflow-hidden">
+              <div class="text-size-medium">X</div>
             </div>
-          </div>
+            <div class="button_underline-wrapper">
+              <div class="button_underline"></div>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/nicmacdonald" target="_blank" class="button w-inline-block slide-up-social social-item-2">
+            <div class="overflow-hidden">
+              <div class="text-size-medium">GitHub</div>
+            </div>
+            <div class="button_underline-wrapper">
+              <div class="button_underline"></div>
+            </div>
+          </a>
+
+          <!-- Blog -->
+          <a href="https://blog.nicmacdonald.co" target="_blank" class="button w-inline-block slide-up-social social-item-3">
+            <div class="overflow-hidden">
+              <div class="text-size-medium">Blog</div>
+            </div>
+            <div class="button_underline-wrapper">
+              <div class="button_underline"></div>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/nicmacdonald/" target="_blank" class="button w-inline-block slide-up-social social-item-4">
+            <div class="overflow-hidden">
+              <div class="text-size-medium">LinkedIn</div>
+            </div>
+            <div class="button_underline-wrapper">
+              <div class="button_underline"></div>
+            </div>
+          </a>
+        </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+  <!-- Main Content -->
+  <main class="pt-20">
     <!-- Projects Section -->
-    <section id="projects" class="py-12 sm:py-16 lg:py-20 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
+    <section id="projects" class="pb-12 sm:pb-16 lg:pb-20 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
       <h3 class="text-2xl sm:text-3xl font-semibold mb-12 sm:mb-16 text-gray-900">Recent projects</h3>
       
       <!-- Projects Grid -->
@@ -316,57 +297,57 @@ import '../styles/global.css';
       <h3 class="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12 text-gray-900">A little about me</h3>
       
       <div class="max-w-4xl">
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
           I'm a product and web designer from Australia. I enjoy working on product design, design systems, and Webflow projects. I work hard and consistently, but don't take myself too seriously.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          My work has been featured on <a href="#" class="text-gray-900 underline hover:text-gray-600">Typewolf</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">Mindsparkle Magazine</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">Webflow</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">Fonts In Use</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">CSS Winner</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">httpster</a>, <a href="#" class="text-gray-900 underline hover:text-gray-600">Siteinspire</a>, and <a href="#" class="text-gray-900 underline hover:text-gray-600">Best Website Gallery</a>.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+          My work has been featured on <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Typewolf</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Mindsparkle Magazine</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Webflow</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Fonts In Use</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">CSS Winner</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">httpster</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Siteinspire</a>, and <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Best Website Gallery</a>.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I'm a lifelong learner, inconsistent reader, and crappy golfer. I'm currently <a href="#" class="text-gray-900 underline hover:text-gray-600">exploring the world</a> with my partner and a carry-on backpack. At the moment we're in 🇲🇽 Mexico.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+          I'm a lifelong learner, inconsistent reader, and crappy golfer. I'm currently <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">exploring the world</a> with my partner and a carry-on backpack. At the moment we're in 🇲🇽 Mexico.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-12">
-          You can check out my work on <a href="#" class="text-gray-900 underline hover:text-gray-600">X (Twitter)</a> or <a href="#" class="text-gray-900 underline hover:text-gray-600">Dribbble</a>. To get in touch, <a href="#" class="text-gray-900 underline hover:text-gray-600">drop me a line</a>. Please note I don't do calls or meetings.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
+          You can check out my work on <a href="https://twitter.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">X</a> or <a href="https://github.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">GitHub</a>. To get in touch, <a href="mailto:hi@nicmacdonald.co" class="text-gray-900 hover:text-gray-600 transition-colors">drop me a line</a>. Please note I don't do calls or meetings.
         </p>
       </div>
 
       <!-- What I've been working on -->
       <div class="max-w-4xl">
-        <h4 class="text-2xl font-semibold mb-8 text-gray-900">What I've been working on</h4>
+        <h4 class="text-xl sm:text-2xl font-semibold mb-8 text-gray-900">What I've been working on</h4>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I'm working on <a href="#" class="text-gray-900 underline hover:text-gray-600">himalayas.app</a> with some smart people. It's our love letter to remote work. We're releasing new features via <a href="#" class="text-gray-900 underline hover:text-gray-600">Twitter</a> and on our <a href="#" class="text-gray-900 underline hover:text-gray-600">changelog</a>.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+          I'm working on <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">himalayas.app</a> with some smart people. It's our love letter to remote work. We're releasing new features via <a href="https://twitter.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">X</a> and on our <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">changelog</a>.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          In late 2021, I created <a href="#" class="text-gray-900 underline hover:text-gray-600">Untitled UI</a>, the ultimate UI kit and design system for Figma that focuses on quality. This library started as a side project but has grown into the largest and best-selling Figma UI kit in the world.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+          In late 2021, I created <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Untitled UI</a>, the ultimate UI kit and design system for Figma that focuses on quality. This library started as a side project but has grown into the largest and best-selling Figma UI kit in the world.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I also created <a href="#" class="text-gray-900 underline hover:text-gray-600">Untitled UI Icons</a>, a clean, consistent, and neutral icon library crafted specifically for modern UI design. This was the #1 Product of the Week on Product Hunt and is now the highest-rated icon library on Gumroad. In 2022, I released two Untitled UI Webflow kits on Relume and Webflow Libraries.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+          I also created <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Untitled UI Icons</a>, a clean, consistent, and neutral icon library crafted specifically for modern UI design. This was the #1 Product of the Week on Product Hunt and is now the highest-rated icon library on Gumroad. In 2022, I released two Untitled UI Webflow kits on Relume and Webflow Libraries.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-12">
-          I built (and later sold) <a href="#" class="text-gray-900 underline hover:text-gray-600">goodbooks.io</a>, the largest curated collection of 8,500+ book recommendations from some of the most successful and interesting people in the world. This project was the #1 Product of the Day on Product Hunt.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
+          I built (and later sold) <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">goodbooks.io</a>, the largest curated collection of 8,500+ book recommendations from some of the most successful and interesting people in the world. This project was the #1 Product of the Day on Product Hunt.
         </p>
       </div>
 
       <!-- Design Philosophy -->
       <div class="max-w-4xl">
-        <h4 class="text-2xl font-semibold mb-8 text-gray-900">Design should be simple</h4>
+        <h4 class="text-xl sm:text-2xl font-semibold mb-8 text-gray-900">Design should be simple</h4>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
           I don't have a background in design. This may sound alarming, but I consider a generalist approach an important asset.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
           I studied Management and Finance at UTS, Sydney, before working as an Ops Manager in high-growth startups. This involved learning fast and wearing a lot of hats. In mid-2019, I decided I wanted to pursue design.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
           Product design isn't as complicated or as difficult as everyone pretends it is. I believe good design should be simple and clear with a pragmatic focus on business growth.
         </p>
       </div>
@@ -377,11 +358,11 @@ import '../styles/global.css';
       <h3 class="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12 text-gray-900">What I'm reading</h3>
       
       <div class="max-w-4xl">
-        <p class="text-lg text-gray-700 leading-relaxed mb-12">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
           In 2018, I started keeping track of books that I'd read and wanted to read next. This eventually turned into Good Books!
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed mb-12">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
           This habit has been incredibly rewarding and something I want to continue indefinitely. Lately, I've been trying to read more fiction.
         </p>
         
@@ -389,67 +370,97 @@ import '../styles/global.css';
         <div class="space-y-12">
           <!-- 2025 -->
           <div>
-            <h4 class="text-xl font-bold mb-6 text-gray-900">2025</h4>
-            <div class="space-y-2">
-              <div class="text-gray-700">
-                <span class="font-semibold">Napoleon: A Life</span> <span class="text-gray-500">Andrew Roberts</span>
-              </div>
+            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2025</h4>
+            <div class="space-y-3">
+              <a href="https://www.amazon.com/Napoleon-Life-Andrew-Roberts/dp/0143127853/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Napoleon: A Life</span> <span class="text-gray-500">Andrew Roberts</span>
+                </div>
+              </a>
             </div>
           </div>
 
           <!-- 2024 -->
           <div>
-            <h4 class="text-xl font-bold mb-6 text-gray-900">2024</h4>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8">
-              <div class="text-gray-700">
-                <span class="font-semibold">A Beautiful Mind</span> <span class="text-gray-500">Sylvia Nasar</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Red Dragon</span> <span class="text-gray-500">Thomas Harris</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">A Dance with Dragons</span> <span class="text-gray-500">George R.R. Martin</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">A Game of Thrones</span> <span class="text-gray-500">George R.R. Martin</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Dune</span> <span class="text-gray-500">Frank Herbert</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">How to Do Great Work</span> <span class="text-gray-500">Paul Graham</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Micro</span> <span class="text-gray-500">Michael Crichton</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Eaters of the Dead</span> <span class="text-gray-500">Michael Crichton</span>
-              </div>
+            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2024</h4>
+            <div class="space-y-3">
+              <a href="https://www.amazon.com/Beautiful-Mind-Sylvia-Nasar/dp/0571212921/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">A Beautiful Mind</span> <span class="text-gray-500">Sylvia Nasar</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Dragon-Hannibal-Lecter-Thomas-Harris/dp/0425228223/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Red Dragon</span> <span class="text-gray-500">Thomas Harris</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/gp/product/0553801473" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">A Dance with Dragons</span> <span class="text-gray-500">George R.R. Martin</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/gp/product/0553103547" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">A Game of Thrones</span> <span class="text-gray-500">George R.R. Martin</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Dune-Chronicles-Book-1/dp/0441013597/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Dune</span> <span class="text-gray-500">Frank Herbert</span>
+                </div>
+              </a>
+              <a href="https://paulgraham.com/greatwork.html" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">How to Do Great Work</span> <span class="text-gray-500">Paul Graham</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Micro-Novel-Michael-Crichton/dp/0062227181/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Micro</span> <span class="text-gray-500">Michael Crichton</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Eaters-Dead-Michael-Crichton/dp/0525436383/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Eaters of the Dead</span> <span class="text-gray-500">Michael Crichton</span>
+                </div>
+              </a>
             </div>
           </div>
 
           <!-- 2023 -->
           <div>
-            <h4 class="text-xl font-bold mb-6 text-gray-900">2023</h4>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8">
-              <div class="text-gray-700">
-                <span class="font-semibold">The Stranger</span> <span class="text-gray-500">Albert Camus</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Elon Musk</span> <span class="text-gray-500">Walter Isaacson</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">World War Z</span> <span class="text-gray-500">Max Brooks</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">Kitchen Confidential</span> <span class="text-gray-500">Anthony Bourdain</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">The Obstacle is the Way</span> <span class="text-gray-500">Ryan Holiday</span>
-              </div>
-              <div class="text-gray-700">
-                <span class="font-semibold">How the World Really Works</span> <span class="text-gray-500">Vaclav Smil</span>
-              </div>
+            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2023</h4>
+            <div class="space-y-3">
+              <a href="https://www.amazon.com/Stranger-Albert-Camus/dp/0679720200/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">The Stranger</span> <span class="text-gray-500">Albert Camus</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Elon-Musk-Walter-Isaacson/dp/1982181281/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Elon Musk</span> <span class="text-gray-500">Walter Isaacson</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/World-War-Z-Max-Brooks/dp/0307346617/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">World War Z</span> <span class="text-gray-500">Max Brooks</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Kitchen-Confidential-Adventures-Culinary-Underbelly/dp/0060899220/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">Kitchen Confidential</span> <span class="text-gray-500">Anthony Bourdain</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">The Obstacle is the Way</span> <span class="text-gray-500">Ryan Holiday</span>
+                </div>
+              </a>
+              <a href="https://www.amazon.com/How-World-Really-Works-Science/dp/0525659684/" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
+                <div class="text-gray-600 group-hover:text-gray-900 transition-colors">
+                  <span class="font-medium">How the World Really Works</span> <span class="text-gray-500">Vaclav Smil</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -461,35 +472,33 @@ import '../styles/global.css';
       <h3 class="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-gray-900">Thanks for stopping by</h3>
       
       <div class="max-w-4xl mb-12">
-        <p class="text-lg text-gray-700 leading-relaxed mb-8">
-          This site was built using Webflow, Untitled UI, Relume, Client-first, and Netlify in less than 48 hours. <a href="#" class="text-gray-900 underline hover:text-gray-600">Duplicate a copy here</a>. Typeface is Suisse Int'l by Swiss Typefaces.
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
+          This site was built using Astro, Tailwind CSS, and deployed on Netlify. <a href="https://github.com/nicmacdonald/website" class="text-gray-900 hover:text-gray-600 transition-colors">View source code</a>. Typeface is Inter by Google Fonts.
         </p>
         
-        <p class="text-lg text-gray-700 leading-relaxed">
+        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
           I acknowledge Australia's First Nations peoples and their ongoing strength in practising the world's oldest living culture. I acknowledge the Traditional Owners of the land on which my office stands, The Wurundjeri people of the Kulin Nation, and pay my respects to Elders both past and present.
         </p>
       </div>
       
       <div class="mb-12">
-        <a href="mailto:hi@jordanhughes.co" class="text-xl text-gray-900 underline hover:text-gray-600">
-          hi@jordanhughes.co
+        <a href="mailto:hi@nicmacdonald.co" class="text-xl text-gray-900 hover:text-gray-600 transition-colors">
+          hi@nicmacdonald.co
         </a>
       </div>
 
       <!-- Footer Social Links -->
       <div class="flex flex-wrap gap-8">
-        <a href="#" class="text-gray-600 hover:text-gray-900">
-          <span class="font-medium">X (Twitter)</span> <span class="text-gray-400">35k</span>
+        <a href="https://twitter.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <span class="font-medium">X</span>
         </a>
-        <a href="#" class="text-gray-600 hover:text-gray-900">
-          <span class="font-medium">Dribbble</span> <span class="text-gray-400">65k</span>
+        <a href="https://github.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <span class="font-medium">GitHub</span>
         </a>
-        <a href="#" class="text-gray-600 hover:text-gray-900">
-          <span class="font-medium">Figma</span> <span class="text-gray-400">7.6k</span>
+        <a href="https://blog.nicmacdonald.co" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <span class="font-medium">Blog</span>
         </a>
-        <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Layers</a>
-        <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Webflow</a>
-        <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/nicmacdonald/" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">LinkedIn</a>
       </div>
     </footer>
   </main>
