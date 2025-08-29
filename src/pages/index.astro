@@ -24,7 +24,7 @@ import '../styles/global.css';
     <!-- Description Text at Top -->
     <div class="max-w-xl pt-20 sm:pt-24 mb-8 sm:mb-12">
       <h2 class="text-base sm:text-lg md:text-xl font-normal leading-relaxed text-gray-600 fade-in-text">
-        I'm a product designer from Australia making<span class="hidden sm:inline"> useful</span> things for the internet and exploring the world.
+        I’m a Product Manager from Canada making <span class="hidden sm:inline">  </span> products that solve real problems while always learning and exploring.
       </h2>
     </div>
 
@@ -37,13 +37,12 @@ import '../styles/global.css';
           <div class="image-wrapper-3-2">
             <!-- Replace this with actual hero image -->
             <div class="w-full aspect-[3/2] rounded-lg overflow-hidden fade-in-image">
-              <div class="w-full h-full bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 flex items-center justify-center">
-                <div class="text-center text-white">
-                  <div class="text-4xl mb-1">🏔️</div>
-                                      <p class="text-xs font-medium">Add nic-macdonald-image.webp</p>
-                  <p class="text-xs opacity-75">3:2 aspect ratio</p>
-                </div>
-              </div>
+              <img 
+                src="/profile.JPEG" 
+                alt="Nic Macdonald" 
+                class="w-full h-full object-cover"
+                onError="this.parentElement.innerHTML='<div class=&quot;w-full h-full bg-gradient-to-br from-green-400 via-blue-500 to-purple-600 flex items-center justify-center&quot;><div class=&quot;text-center text-white&quot;><div class=&quot;text-4xl mb-1&quot;>🏔️</div><p class=&quot;text-xs font-medium&quot;>Image not found: /profile.JPEG</p><p class=&quot;text-xs opacity-75&quot;>Check file exists in /public folder</p></div></div>'"
+              />
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ import '../styles/global.css';
           </a>
 
           <!-- GitHub -->
-          <a href="https://github.com/nicmacdonald" target="_blank" class="button w-inline-block slide-up-social social-item-2">
+          <a href="https://github.com/nicmacd" target="_blank" class="button w-inline-block slide-up-social social-item-2">
             <div class="overflow-hidden">
               <div class="text-size-medium">GitHub</div>
             </div>
