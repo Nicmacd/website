@@ -23,7 +23,7 @@ import '../styles/global.css';
   <section id="hero" class="min-h-screen flex flex-col max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
     <!-- Description Text at Top -->
     <div class="max-w-xl pt-20 sm:pt-24 mb-8 sm:mb-12">
-      <h2 class="text-base sm:text-lg md:text-xl font-normal leading-relaxed text-gray-600 fade-in-text">
+      <h2 class="text-base md:text-xl font-normal leading-relaxed text-gray-600 fade-in-text">
         I’m a Product Manager from Canada <span class="hidden sm:inline">  </span> trying to build things that solve real problems while exploring along the way.
       </h2>
     </div>
@@ -99,192 +99,208 @@ import '../styles/global.css';
   <main class="pt-20">
     <!-- Projects Section -->
     <section id="projects" class="pb-12 sm:pb-16 lg:pb-20 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <h3 class="text-2xl sm:text-3xl font-semibold mb-12 sm:mb-16 text-gray-900">Recent projects</h3>
+      <p class="text-base font-bold mb-8 text-gray-900">Recent projects</p>
       
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Project 1: Untitled UI -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center">
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <div class="w-full h-full bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center transition-all duration-200 group-hover:blur-[2px]">
               <div class="text-center text-gray-600">
                 <div class="text-4xl mb-2">🎨</div>
-                <p class="text-sm">UI Kit Mockup</p>
+                <p class="text-base">UI Kit Mockup</p>
+              </div>
+            </div>
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  The ultimate UI kit and design system for Figma that focuses on quality. Started as a side project but has grown into the largest and best-selling Figma UI kit in the world.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-blue-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
+            <p class="text-base font-bold mb-3 text-gray-900 flex items-center space-x-2">
               <span>Untitled UI</span>
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
               The ultimate UI kit and design system for Figma that focuses on quality. This library started as a side project but has grown into the largest and best-selling Figma UI kit in the world with 1,500+ 5-star reviews.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Untitled UI</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">untitledui.com</a>
+              <div class="text-base font-medium text-gray-900">Untitled UI</div>
             </div>
           </div>
         </div>
 
-        <!-- Project 2: Untitled UI Icons -->
+        <!-- Project 2: Ontario Community Energy Savings -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
-              <div class="text-center text-gray-600">
-                <div class="text-4xl mb-2">🔮</div>
-                <p class="text-sm">Icon Library</p>
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <img 
+              src="/ecobee-products.png" 
+              alt="Community Energy Savings" 
+              class="w-full h-full object-cover transition-all duration-200 group-hover:blur-[2px]"
+            />
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  Community energy savings programs aim to provide an opportunity for customers to play a significant role in the operation of the electricity grid, with the goal of ensuring a cost-effective, sustainable, and reliable electricity system in Ontario. As a new program we had to work with utility partners to test and ensure our entry points and API's were working properly, we also had to educate eligible users on the benefits.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-indigo-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
-              <span>Untitled UI Icons</span>
-              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-              A clean, consistent, and neutral icon library crafted specifically for modern UI design. Made for Figma, in Figma. The #1 Product of the Week on Product Hunt and is the highest-rated icon library on Gumroad.
+            <p class="text-base font-bold mb-3 text-gray-900">
+              Ontario Community Energy Savings
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
+              Spearheaded the implementation of the Ontario energy rebate program aimed at increasing the customer base by 12% through strategic partnerships with IESO and Hydro One.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Untitled UI Icons</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">untitledui.com/icons</a>
+              <div class="text-base font-medium text-gray-900">ecobee Energy Services</div>
             </div>
           </div>
         </div>
 
-        <!-- Project 3: Himalayas -->
+        <!-- Project 3: Smart Security Integrations -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-green-100 to-teal-100 flex items-center justify-center">
-              <div class="text-center text-gray-600">
-                <div class="text-4xl mb-2">🏔️</div>
-                <p class="text-sm">Job Board</p>
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <img 
+              src="/Smart-Security.png" 
+              alt="Smart Security Integrations" 
+              class="w-full h-full object-cover transition-all duration-200 group-hover:blur-[2px]"
+            />
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  Led product and technical scoping for new product integrations at ecobee, addressing market gaps and expanding our smart security ecosystem to match industry standards.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-green-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
-              <span>Himalayas</span>
-              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-              A collaboration I'm working on with some smart people. We couldn't find a remote job board that we loved, so we're building one. Himalayas is a remote job board that actually cares about design and quality.
+            <p class="text-base font-bold mb-3 text-gray-900">
+              Smart Security Integrations
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
+              Led product and technical scoping for new product integrations at ecobee, addressing market gaps and expanding our smart security ecosystem to match industry standards.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Himalayas</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">himalayas.app</a>
+              <div class="text-base font-medium text-gray-900">ecobee Smart Security</div>
             </div>
           </div>
         </div>
 
         <!-- Project 4: Relume Library -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center">
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <div class="w-full h-full bg-gradient-to-br from-orange-100 to-red-100 flex items-center justify-center transition-all duration-200 group-hover:blur-[2px]">
               <div class="text-center text-gray-600">
                 <div class="text-4xl mb-2">🧩</div>
-                <p class="text-sm">Component Library</p>
+                <p class="text-base">Component Library</p>
+              </div>
+            </div>
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  A beautiful, modern, and neutral Webflow library based on Untitled UI with 280+ components and layouts. Built with Finsweet Client-first best practices.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-orange-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
+            <p class="text-base font-bold mb-3 text-gray-900 flex items-center space-x-2">
               <span>Relume Library</span>
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
               A beautiful, modern, and neutral Webflow library based on Untitled UI with 280+ components and layouts. This library is built with 100% Finsweet Client-first best practices and perfect starting point for advanced Webflow projects.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Relume Library</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">library.relume.io</a>
+              <div class="text-base font-medium text-gray-900">Relume Library</div>
             </div>
           </div>
         </div>
 
         <!-- Project 5: Webflow Library -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <div class="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center transition-all duration-200 group-hover:blur-[2px]">
               <div class="text-center text-gray-600">
                 <div class="text-4xl mb-2">⚡</div>
-                <p class="text-sm">Webflow Template</p>
+                <p class="text-base">Webflow Template</p>
+              </div>
+            </div>
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  A beautiful, modern, and neutral Webflow library with 280+ components and layouts. Uses a simplified version of Finsweet's Client-first methodology.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-gray-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
+            <p class="text-base font-bold mb-3 text-gray-900 flex items-center space-x-2">
               <span>Webflow Library</span>
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
               A beautiful, modern, and neutral Webflow library based on Untitled UI with 280+ components and layouts. This library uses a simplified version of Finsweet's Client-first and is the perfect starting point for beginners.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Webflow Library</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">webflow.com/libraries</a>
+              <div class="text-base font-medium text-gray-900">Webflow Library</div>
             </div>
           </div>
         </div>
 
         <!-- Project 6: Good Books -->
         <div class="space-y-6">
-          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-            <div class="w-full h-full bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center">
+          <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
+            <div class="w-full h-full bg-gradient-to-br from-pink-100 to-rose-100 flex items-center justify-center transition-all duration-200 group-hover:blur-[2px]">
               <div class="text-center text-gray-600">
                 <div class="text-4xl mb-2">📚</div>
-                <p class="text-sm">Book Recommendations</p>
+                <p class="text-base">Book Recommendations</p>
+              </div>
+            </div>
+            
+            <!-- Hover Overlay -->
+            <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
+              <div class="text-left max-w-lg">
+                <p class="text-base text-gray-900 leading-relaxed">
+                  The largest curated collection of 8,500+ book recommendations from some of the most successful and interesting people in the world. #1 Product of the Day on Product Hunt.
+                </p>
               </div>
             </div>
           </div>
           <div>
-            <div class="flex items-center space-x-2 mb-3">
-              <span class="w-4 h-4 bg-pink-500 rounded-full flex-shrink-0"></span>
-              <span class="text-sm text-gray-600">Figma user</span>
-            </div>
-            <h4 class="text-lg font-semibold mb-3 text-gray-900 flex items-center space-x-2">
+            <p class="text-base font-bold mb-3 text-gray-900 flex items-center space-x-2">
               <span>Good Books</span>
               <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
               </svg>
-            </h4>
-            <p class="text-gray-600 mb-4 leading-relaxed text-sm">
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed text-base">
               The largest curated collection of 8,500+ book recommendations from some of the most successful and interesting people in the world. This project was the #1 Product of the Day on Product Hunt.
             </p>
             <div class="space-y-2">
-              <div class="text-sm font-medium text-gray-900">Good Books</div>
-              <a href="#" class="text-sm text-blue-600 hover:text-blue-800">goodbooks.io</a>
+              <div class="text-base font-medium text-gray-900">Good Books</div>
             </div>
           </div>
         </div>
@@ -293,83 +309,71 @@ import '../styles/global.css';
 
     <!-- About Section -->
     <section id="about" class="py-12 sm:py-16 lg:py-20 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <h3 class="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12 text-gray-900">A little about me</h3>
+      <p class="text-base font-bold mb-8 text-gray-900">About me</p>
       
-      <div class="max-w-4xl">
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I'm a product and web designer from Australia. I enjoy working on product design, design systems, and Webflow projects. I work hard and consistently, but don't take myself too seriously.
+      <div class="max-w-prose">
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          I'm Nic, a product manager from Canada with a background in Computer Engineering. I discovered product almost by accident, but it quickly became the perfect fit, allowing me to do what I love: build.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          My work has been featured on <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Typewolf</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Mindsparkle Magazine</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Webflow</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Fonts In Use</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">CSS Winner</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">httpster</a>, <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Siteinspire</a>, and <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Best Website Gallery</a>.
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          I've been fortunate to work with some great teams, including a year-long internship at ecobee where I learned firsthand what high-functioning product and engineering teams look like. Currently, I'm working at a venture studio (AltaML) bringing complex AI solutions to life, or at least trying my best to.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I'm a lifelong learner, inconsistent reader, and crappy golfer. I'm currently <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">exploring the world</a> with my partner and a carry-on backpack. At the moment we're in 🇲🇽 Mexico.
-        </p>
-        
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
-          You can check out my work on <a href="https://twitter.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">X</a> or <a href="https://github.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">GitHub</a>. To get in touch, <a href="mailto:hi@nicmacdonald.co" class="text-gray-900 hover:text-gray-600 transition-colors">drop me a line</a>. Please note I don't do calls or meetings.
+        <p class="text-base text-gray-600 leading-relaxed mb-12">
+          Outside of work, I grew up in the Rocky Mountains and still spend as much time as I can outdoors (skiing, biking, hiking, camping, playing rugby) whenever I get the chance. Recently I've taken up pottery as a new artistic endeavour, I'm not great but my friends love the things I make.
         </p>
       </div>
 
       <!-- What I've been working on -->
-      <div class="max-w-4xl">
-        <h4 class="text-xl sm:text-2xl font-semibold mb-8 text-gray-900">What I've been working on</h4>
+      <div class="max-w-prose">
+        <p class="text-base font-bold text-gray-900 mb-8">What I've Been Working On</p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I'm working on <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">himalayas.app</a> with some smart people. It's our love letter to remote work. We're releasing new features via <a href="https://twitter.com/nicmacdonald" class="text-gray-900 hover:text-gray-600 transition-colors">X</a> and on our <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">changelog</a>.
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          Through work, I've been fortunate to tackle everything from fresh founder ideas to helping small organizations disrupt their industries to launching mobile apps. While the public aspects of my work can be found in my Projects section, my passion for creation extends far beyond my full-time job.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          In late 2021, I created <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Untitled UI</a>, the ultimate UI kit and design system for Figma that focuses on quality. This library started as a side project but has grown into the largest and best-selling Figma UI kit in the world.
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          Most recently, I've been working on <strong>gaydaar</strong>, a queer dating app fostering in-person connection. At the start of 2025, I moved in with two of my best friends, and we came to the sobering conclusion that dating in 2025 sucks. The apps lead nowhere, and people our generation seem averse to talking in person when going out. On top of that, I kept hitting on straight guys thinking they were gay. So we set out to solve one of these problems: how to know who's gay.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I also created <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">Untitled UI Icons</a>, a clean, consistent, and neutral icon library crafted specifically for modern UI design. This was the #1 Product of the Week on Product Hunt and is now the highest-rated icon library on Gumroad. In 2022, I released two Untitled UI Webflow kits on Relume and Webflow Libraries.
-        </p>
-        
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
-          I built (and later sold) <a href="#" class="text-gray-900 hover:text-gray-600 transition-colors">goodbooks.io</a>, the largest curated collection of 8,500+ book recommendations from some of the most successful and interesting people in the world. This project was the #1 Product of the Day on Product Hunt.
+        <p class="text-base text-gray-600 leading-relaxed mb-12">
+          Beyond this, I build tools to make my everyday life easier. I created a simple RAG system to query my finances since my bank makes spending tracking unnecessarily difficult (Canadian banking really does suck). I'm also working on a community-driven library where people can discover, share, and tailor AI IDE configuration rules to improve how their coding assistants behave.
         </p>
       </div>
 
-      <!-- Design Philosophy -->
-      <div class="max-w-4xl">
-        <h4 class="text-xl sm:text-2xl font-semibold mb-8 text-gray-900">Design should be simple</h4>
+      <!-- Creativity for the Masses -->
+      <div class="max-w-prose">
+        <p class="text-base font-bold text-gray-900 mb-8">Creativity for the Masses</p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I don't have a background in design. This may sound alarming, but I consider a generalist approach an important asset.
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          Though I have a degree in Computer Engineering, coding isn't my strongest suit. In the past, I limited myself to SQL, data analytics, API validation, and similar tasks. However, the wave of AI tools we all now have access to has completely changed this reality.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-          I studied Management and Finance at UTS, Sydney, before working as an Ops Manager in high-growth startups. This involved learning fast and wearing a lot of hats. In mid-2019, I decided I wanted to pursue design.
+        <p class="text-base text-gray-600 leading-relaxed mb-6">
+          While I've always strived to be entrepreneurial, I never felt particularly creative. That changed when I just began creating, and when I read <em>The Creative Act</em>. I used to believe creativity was reserved for artists but I've since realized that creativity belongs to anyone who chooses to try, and tools like Cursor and Lovable have given me a medium I never thought possible.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Product design isn't as complicated or as difficult as everyone pretends it is. I believe good design should be simple and clear with a pragmatic focus on business growth.
+        <p class="text-base text-gray-600 leading-relaxed">
+          While this shift has impacted many areas of my life, the greatest effect has been solidifying my choice to work in product and nurturing my curiosity to solve problems around me. I don't believe all meaningful work needs to revolve around tech but I'm grateful that tech has become my playground for creativity.
         </p>
       </div>
     </section>
 
     <!-- Reading Section -->
     <section id="reading" class="py-12 sm:py-16 lg:py-20 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <h3 class="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-12 text-gray-900">What I'm reading</h3>
+      <p class="text-base font-bold mb-8 text-gray-900">What I'm reading</p>
       
-      <div class="max-w-4xl">
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
-          In 2018, I started keeping track of books that I'd read and wanted to read next. This eventually turned into Good Books!
-        </p>
-        
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-12">
-          This habit has been incredibly rewarding and something I want to continue indefinitely. Lately, I've been trying to read more fiction.
+      <div class="max-w-prose">
+        <p class="text-base text-gray-600 leading-relaxed mb-12">
+          As a kid my mom told me she doesn't know anyone successful who isn't well read, I took that to heart and learned early to love reading and the curiosity that comes with knowledge.
         </p>
         
         <!-- Reading List by Year -->
         <div class="space-y-12">
           <!-- 2025 -->
           <div>
-            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2025</h4>
+            <p class="text-base font-bold mb-6 text-gray-900">2025</h4>
             <div class="space-y-3">
               <!-- First 10 books (always visible) -->
               <a href="https://www.indigo.ca/en-ca/search?keywords=Fall+of+Giants+%28The+Century+Trilogy%2C+%231%29+Ken+Follett" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
@@ -459,7 +463,7 @@ import '../styles/global.css';
 
           <!-- 2024 -->
           <div>
-            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2024</h4>
+            <p class="text-base font-bold mb-6 text-gray-900">2024</h4>
             <div class="space-y-3">
               <!-- First 10 books (always visible) -->
               <a href="https://www.indigo.ca/en-ca/search?keywords=How+to+Stop+Worrying+and+Start+Living%3A+Time-Tested+Methods+for+Conquering+Worry+Dale+Carnegie" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
@@ -594,7 +598,7 @@ import '../styles/global.css';
 
           <!-- 2023 -->
           <div>
-            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2023</h4>
+            <p class="text-base font-bold mb-6 text-gray-900">2023</h4>
             <div class="space-y-3">
               <!-- First 10 books (always visible) -->
               <a href="https://www.indigo.ca/en-ca/search?keywords=Suite+Fran%C3%A7aise+Ir%C3%A8ne+N%C3%A9mirovsky" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
@@ -739,7 +743,7 @@ import '../styles/global.css';
 
           <!-- 2022 -->
           <div>
-            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2022</h4>
+            <p class="text-base font-bold mb-6 text-gray-900">2022</h4>
             <div class="space-y-3">
               <!-- First 10 books (always visible) -->
               <a href="https://www.indigo.ca/en-ca/search?keywords=The+Glass+Hotel+Emily+St.+John+Mandel" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
@@ -969,7 +973,7 @@ import '../styles/global.css';
 
           <!-- 2021 -->
           <div>
-            <h4 class="text-lg sm:text-xl font-semibold mb-6 text-gray-900">2021</h4>
+            <p class="text-base font-bold mb-6 text-gray-900">2021</h4>
             <div class="space-y-3">
               <!-- First 10 books (always visible) -->
               <a href="https://www.indigo.ca/en-ca/search?keywords=Dune+%28Dune+%231%29+Frank+Herbert" target="_blank" rel="nofollow" class="group block transition-all duration-200 hover:translate-x-1">
@@ -1177,14 +1181,14 @@ import '../styles/global.css';
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 pt-12 sm:pt-16 pb-8 sm:pb-12 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <h3 class="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-gray-900">Thanks for stopping by</h3>
+      <p class="text-base font-bold mb-8 text-gray-900">Thanks for stopping by</p>
       
-      <div class="max-w-4xl mb-12">
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
+      <div class="max-w-prose mb-12">
+        <p class="text-base text-gray-600 leading-relaxed mb-8">
           This site was built using Astro, Tailwind CSS, and deployed on Netlify. <a href="https://github.com/nicmacdonald/website" class="text-gray-900 hover:text-gray-600 transition-colors">View source code</a>. Typeface is Inter by Google Fonts.
         </p>
         
-        <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+        <p class="text-base text-gray-600 leading-relaxed">
           I acknowledge Australia's First Nations peoples and their ongoing strength in practising the world's oldest living culture. I acknowledge the Traditional Owners of the land on which my office stands, The Wurundjeri people of the Kulin Nation, and pay my respects to Elders both past and present.
         </p>
       </div>
@@ -1211,6 +1215,7 @@ import '../styles/global.css';
     </footer>
   </main>
 
+
   <script is:inline>
     function toggleBooks(year) {
       const extraBooks = document.getElementById(`books-${year}-extra`);
@@ -1236,5 +1241,6 @@ import '../styles/global.css';
         button.textContent = 'Show more books';
       }
     }
+
   </script>
 </Layout>
