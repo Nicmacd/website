@@ -103,37 +103,33 @@ import '../styles/global.css';
       
       <!-- Projects Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Project 1: Untitled UI -->
+        <!-- Project 1: Poweragent AI -->
         <div class="space-y-6">
           <div class="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden relative group">
-            <div class="w-full h-full bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center transition-all duration-200 group-hover:blur-[2px]">
-              <div class="text-center text-gray-600">
-                <div class="text-4xl mb-2">🎨</div>
-                <p class="text-base">UI Kit Mockup</p>
-              </div>
-            </div>
+            <img 
+              src="/Poweragent.png" 
+              alt="Poweragent AI" 
+              class="w-full h-full object-cover transition-all duration-200 group-hover:blur-[2px]"
+            />
             
             <!-- Hover Overlay -->
             <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex items-end justify-start p-6">
               <div class="text-left max-w-lg">
                 <p class="text-base text-gray-900 leading-relaxed">
-                  The ultimate UI kit and design system for Figma that focuses on quality. Started as a side project but has grown into the largest and best-selling Figma UI kit in the world.
+                  Real estate agents are constantly on the move, juggling dozens of client conversations while manually managing follow-ups, booking showings, and updating CRMs. These overhead tasks are time-consuming and error-prone. PowerAgent set out to reduce this burden by using AI to automate the admin.
                 </p>
               </div>
             </div>
           </div>
           <div>
-            <p class="text-base font-bold mb-3 text-gray-900 flex items-center space-x-2">
-              <span>Untitled UI</span>
-              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-              </svg>
+            <p class="text-base font-bold mb-3 text-gray-900">
+              Poweragent AI
             </p>
             <p class="text-gray-600 mb-4 leading-relaxed text-base">
-              The ultimate UI kit and design system for Figma that focuses on quality. This library started as a side project but has grown into the largest and best-selling Figma UI kit in the world with 1,500+ 5-star reviews.
+              I led the full product development from initial concept through to pilot launch. We built a mobile-first experience using Twilio Voice for call handling and Whisper for real-time transcription.
             </p>
             <div class="space-y-2">
-              <div class="text-base font-medium text-gray-900">Untitled UI</div>
+              <a href="https://www.producthunt.com/products/poweragent-ai" target="_blank" class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors">PowerAgent AI - Product Hunt</a>
             </div>
           </div>
         </div>
@@ -164,7 +160,7 @@ import '../styles/global.css';
               Spearheaded the implementation of the Ontario energy rebate program aimed at increasing the customer base by 12% through strategic partnerships with IESO and Hydro One.
             </p>
             <div class="space-y-2">
-              <div class="text-base font-medium text-gray-900">ecobee Energy Services</div>
+              <a href="https://www.ecobee.com/en-ca/" target="_blank" class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors">ecobee</a>
             </div>
           </div>
         </div>
@@ -195,7 +191,7 @@ import '../styles/global.css';
               Led product and technical scoping for new product integrations at ecobee, addressing market gaps and expanding our smart security ecosystem to match industry standards.
             </p>
             <div class="space-y-2">
-              <div class="text-base font-medium text-gray-900">ecobee Smart Security</div>
+              <a href="https://www.ecobee.com/en-ca/" target="_blank" class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors">ecobee</a>
             </div>
           </div>
         </div>
@@ -1181,36 +1177,32 @@ import '../styles/global.css';
 
     <!-- Footer -->
     <footer class="border-t border-gray-200 pt-12 sm:pt-16 pb-8 sm:pb-12 max-w-none lg:max-w-[98%] mx-auto px-4 sm:px-6 lg:px-4 xl:px-6">
-      <p class="text-base font-bold mb-8 text-gray-900">Thanks for stopping by</p>
-      
-      <div class="max-w-prose mb-12">
-        <p class="text-base text-gray-600 leading-relaxed mb-8">
-          This site was built using Astro, Tailwind CSS, and deployed on Netlify. <a href="https://github.com/nicmacdonald/website" class="text-gray-900 hover:text-gray-600 transition-colors">View source code</a>. Typeface is Inter by Google Fonts.
-        </p>
-        
-        <p class="text-base text-gray-600 leading-relaxed">
-          I acknowledge Australia's First Nations peoples and their ongoing strength in practising the world's oldest living culture. I acknowledge the Traditional Owners of the land on which my office stands, The Wurundjeri people of the Kulin Nation, and pay my respects to Elders both past and present.
-        </p>
-      </div>
-      
-      <div class="mb-12">
-        <a href="mailto:hi@nicmacdonald.co" class="text-xl text-gray-900 hover:text-gray-600 transition-colors">
-          hi@nicmacdonald.co
-        </a>
-      </div>
+      <div class="flex justify-between items-start">
+        <div class="flex-1">
+          <p class="text-base font-bold mb-8 text-gray-900">Thanks for stopping by</p>
+          
+          <div class="max-w-prose mb-12">
+            <p class="text-base text-gray-600 leading-relaxed">
+              This site was built using Astro, Tailwind CSS, and deployed on Netlify. <a href="https://github.com/nicmacdonald/website" class="text-gray-900 hover:text-gray-600 transition-colors">View source code</a>. Typeface is Inter by Google Fonts. This site was inspired by <a href="https://jordanhughes.co/" target="_blank" class="text-gray-900 hover:text-gray-600 transition-colors">jordanhughes.co</a>.
+            </p>
+          </div>
+        </div>
 
-      <!-- Footer Social Links -->
-      <div class="flex flex-wrap gap-8">
-        <a href="https://twitter.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
-          <span class="font-medium">X</span>
-        </a>
-        <a href="https://github.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
-          <span class="font-medium">GitHub</span>
-        </a>
-        <a href="https://blog.nicmacdonald.co" class="text-gray-600 hover:text-gray-900 transition-colors">
-          <span class="font-medium">Blog</span>
-        </a>
-        <a href="https://www.linkedin.com/in/nicmacdonald/" class="text-gray-600 hover:text-gray-900 transition-colors font-medium">LinkedIn</a>
+        <!-- Footer Social Links - Right Side -->
+        <div class="flex gap-8 text-right">
+          <a href="https://twitter.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
+            <span class="font-medium">X</span>
+          </a>
+          <a href="https://github.com/nicmacdonald" class="text-gray-600 hover:text-gray-900 transition-colors">
+            <span class="font-medium">GitHub</span>
+          </a>
+          <a href="https://blog.nicmacdonald.co" class="text-gray-600 hover:text-gray-900 transition-colors">
+            <span class="font-medium">Blog</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nicmacdonald/" class="text-gray-600 hover:text-gray-900 transition-colors">
+            <span class="font-medium">LinkedIn</span>
+          </a>
+        </div>
       </div>
     </footer>
   </main>
