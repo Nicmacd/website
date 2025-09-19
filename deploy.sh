@@ -6,7 +6,6 @@
 set -e  # Exit on any error
 
 echo "🚀 Starting deployment..."
-
 # Make sure we're on main branch
 echo "📋 Checking current branch..."
 CURRENT_BRANCH=$(git branch --show-current)
