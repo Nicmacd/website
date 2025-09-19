@@ -12,9 +12,9 @@ import '../styles/global.css';
         <a href="#hero" class="text-base font-medium text-gray-900 hover:text-gray-600 transition-colors">Nic Macdonald</a>
       </div>
       <div class="hidden md:flex space-x-10">
-        <a href="#projects" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-1">Projects</a>
-        <a href="#about" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-2">About</a>
-        <a href="#reading" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-3">Reading</a>
+        <a href="#projects" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-1 smooth-scroll">Projects</a>
+        <a href="#about" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-2 smooth-scroll">About</a>
+        <a href="#reading" class="text-base text-gray-600 hover:text-gray-900 font-medium slide-up-nav nav-item-3 smooth-scroll">Reading</a>
       </div>
     </nav>
   </header>
@@ -1190,6 +1190,27 @@ import '../styles/global.css';
         button.textContent = 'Show more books';
       }
     }
+
+    // Smooth scroll without changing URL
+    document.addEventListener('DOMContentLoaded', function() {
+      const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+      
+      smoothScrollLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Prevent default hash behavior
+          
+          const targetId = this.getAttribute('href').substring(1); // Remove #
+          const targetElement = document.getElementById(targetId);
+          
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
 
   </script>
 </Layout>
